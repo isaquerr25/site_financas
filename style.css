@@ -283,3 +283,39 @@ footer {
         gap: 2rem;
     }
 }
+/*  tela de login ============================= */
+
+/*  body ====================== */
+.box-login {
+    -webkit-box-sizing: border-box;
+    background-color: #bbbaba;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    -webkit-box-flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 600px;
+    
+}
+
+.sub-box {
+    background-color: var(--light-green);
+
+}
+.input-google{
+    
+    background-color: #f0f2f5;
+    border-radius: 0.25rem;
+    width: 15rem;
+    position: absolute;
+    left: 50%;
+    
+}
+
+
+
+
+
