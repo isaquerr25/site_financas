@@ -1,0 +1,161 @@
+:root { 
+    --darl-blue: #363f5f;
+    --green: #49AA26;
+    --lighter-green: #44ff00;
+    --light-green: #3dd705;
+    --red: #e92929;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; 
+
+}
+
+body {
+    background: #ebebeb;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    align-items: center;
+}
+
+header {
+    background: #2d4a22;
+    padding: 2rem 0 5rem;
+    text-align: center;
+    width: 100vw;
+}
+/*  tela de login ============================= */
+
+/*  body ====================== */
+.box-login {
+
+    width: min(50vw ,400px);
+    align-items: center;
+    position: relative;
+    background: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2rem 0;
+    min-height: 25rem;
+    min-width: 25rem;
+}
+
+
+.box-login h1{
+    text-align: center;
+    padding-top:10%;
+    padding-bottom:30%;
+    width: 100%;
+    background-color: #2d4a22;
+    color: #d3d3d3;
+}
+
+.circle{
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    height: 7.5rem;
+    width: 7.5rem;
+    background-color: #d3d3d3;
+    box-shadow: 0rem 0rem 1rem 0.25rem rgba(0, 0, 0, 0.479), inset 0rem 0rem 0rem 0.25rem rgba(0, 0, 0, 0.582);
+    color: #2d4a22;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+
+input {
+    padding: 0.5rem;
+    height: 2rem;
+    background-color: aliceblue;
+    border: 0;
+    width: 75%;
+
+}
+form{
+    background-color: #a5a5a534;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+.tep{
+    border-radius: 0.25rem 0.25rem 0 0;
+    background-color: var(--green);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.sub-box {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    width: 100%;
+    
+    
+}
+.sub-box input{
+    margin: 0.30rem;
+    max-width: 25rem;
+}
+
+
+.sub-box button{
+
+    transition: 0.3s;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--green);
+    width: 50%;
+    min-width: 10rem;
+    height: 2rem;
+    border: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button-google:hover {
+    background: var(--light-green);
+}
+.button-google:active {
+    background: var(--lighter-green);
+
+}
+
+
+
+
+
+
+
+
