@@ -4,7 +4,7 @@ const AddressController = require('./controllers/AddressController');
 const TechController = require('./controllers/TechController');
 const ReportController = require('./controllers/ReportController');
 const GridValuesController = require('./controllers/GridValuesController');
-const ManagerGridsController = require('./controllers/ManagerGridsController');
+const ManagerValuesController = require('./controllers/ManagerValuesController');
 const routes = express.Router();
 
 //routes.get('/',(rea,res) =>{
@@ -27,9 +27,11 @@ routes.get('/report', ReportController.show);
 routes.get('/users/:user_id/gridvalues', GridValuesController.index);
 routes.post('/users/:user_id/gridvalues', GridValuesController.store);
 
-routes.get('/users/:user_id/gridvalues/:grid_id/managergrids', ManagerGridsController.index);
-routes.post('/users/:user_id/gridvalues/:grid_id/managergrids', ManagerGridsController.store);
-routes.post('/users/:user_id/gridvalues/:grid_id/managergrids_dell', ManagerGridsController.dell);
+
+routes.get('/users/:user_id/gridvalues/:grid_id/managergrids', ManagerValuesController.index);
+routes.post('/users/:user_id/gridvalues/:grid_id/managergrids', ManagerValuesController.store);
+routes.post('/users/:user_id/gridvalues/:grid_id/managergrids_dell', ManagerValuesController.dell);
+routes.post('/users/:userpras/gridvalues/:namepras/managergridsapp', ManagerValuesController.createTrasitionByName);
 module.exports = routes;
 
 

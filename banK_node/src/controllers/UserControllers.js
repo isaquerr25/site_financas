@@ -1,6 +1,6 @@
 
 const User = require('../models/User');
-
+const GridValuesController = require('./GridValuesController');
 module.exports = {
     
 
@@ -36,9 +36,12 @@ module.exports = {
             }
 
             const user = await User.create({ name, email , password });
-        
+            console.log('-----------------------------------------------------------')
+            console.log(user.dataValues.id)
+            console.log('-----------------------------------------------------------')
+            GridValuesController.createInter({'userID':user.dataValues.id,'name':'All','date_inform':new Date(),'createDate':new Date()})
             return res.json(user);
-        }
+        } 
         catch(error)
         {
             console.log(error)
