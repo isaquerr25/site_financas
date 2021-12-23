@@ -26,12 +26,14 @@ routes.get('/report', ReportController.show);
 
 routes.get('/users/:user_id/gridvalues', GridValuesController.index);
 routes.post('/users/:user_id/gridvalues', GridValuesController.store);
+routes.post('/users/:user_id/gridvaluesdell', GridValuesController.dell);
 
 
 routes.get('/users/:user_id/gridvalues/:grid_id/managergrids', ManagerValuesController.index);
 routes.post('/users/:user_id/gridvalues/:grid_id/managergrids', ManagerValuesController.store);
 routes.post('/users/:user_id/gridvalues/:grid_id/managergrids_dell', ManagerValuesController.dell);
 routes.post('/users/:userpras/gridvalues/:namepras/managergridsapp', ManagerValuesController.createTrasitionByName);
+routes.post('/users/:userpras/managergridfindByUser', ManagerValuesController.findByUser);
 module.exports = routes;
 
 
